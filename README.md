@@ -15,3 +15,9 @@
 - multiple syntaxes
 - one parent
 - jsx
+
+3. React Developer Tools and passing down props
+
+- https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+- installing, viewing
+- passing down props
