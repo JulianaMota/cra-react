@@ -1,6 +1,7 @@
 # Geting started with react
 
 1. Create-React-App & Branches for the tutorial
+
 - what is it
 - installing
 - a quick look at the files
@@ -9,4 +10,8 @@
 - branching
 - grabbing a remote branch
 
-## hi mom
+2. functional components
+
+- multiple syntaxes
+- one parent
+- jsx
