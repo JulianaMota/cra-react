@@ -21,3 +21,7 @@
 - https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 - installing, viewing
 - passing down props
+
+4. Rendering arrays
+
+- map

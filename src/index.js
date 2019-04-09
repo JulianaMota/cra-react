@@ -1,52 +1,56 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-const Footer = () => {
-  return <footer>&copy; 2018</footer>;
-};
+
 function App() {
-  const data = {
-    age: 26,
-    skills: ["a", "b"]
-  };
+  const data = [
+    {
+      name: "Ju",
+      hobbies: ["drawing", "gaming", "anime"],
+      email: "ju@kea.dk"
+    },
+    {
+      name: "Pedro",
+      hobbies: ["youtube", "gaming", "series"],
+      email: "pe@kea.dk"
+    },
+    {
+      name: "Laura",
+      hobbies: ["series", "read", "gaming"],
+      email: "lau@kea.dk"
+    }
+  ];
+  const friends = data.map(friend => {
+    return (
+      <Friends
+        name={friend.name}
+        email={friend.email}
+        hobbies={friend.hobbies}
+      />
+    );
+  });
   return (
     <div id="App">
-      <Header />
-      <Person mydata={data} name="Ulla" />
-      <Person mydata={data} name="Bo" />
-      <Person mydata={data} name="Ib" />
-      <Person mydata={data} name="Ask" />
-      <Footer name="Ask" />
+      <header>Header</header>
+      {friends}
+      <footer>Footer</footer>
     </div>
-    // <header>
-    //   <h1>This is React</h1>
-    // </header>
   );
 }
-function Header() {
-  return (
-    <header>
-      <h1>This is React</h1>
-      <section />
-    </header>
-  );
-}
-function Person(props) {
-  console.log(props.name);
+function Friends(props) {
   return (
     <article>
-      <h1>{props.name}</h1>
-      <p>Im {props.mydata.age}</p>
-      <Skills skills={props.mydata.skills} />
+      <header>
+        <h1>{props.name}</h1>
+        <p>{props.email}</p>
+      </header>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>{props.hobbies}</li>
+      </ul>
     </article>
   );
 }
-function Skills(props) {
-  return (
-    <ul>
-      <li>skills here</li>
-    </ul>
-  );
-}
+
 //JSX = ex:"<App />" html elemts form react always capitalized
 ReactDOM.render(<App />, document.getElementById("root"));
