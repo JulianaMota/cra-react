@@ -5,11 +5,10 @@ const Footer = () => {
   return <footer>&copy; 2018</footer>;
 };
 function App() {
-    const data = {
-        age:26,
-        skills = ["a", "b"]
-
-    }
+  const data = {
+    age: 26,
+    skills: ["a", "b"]
+  };
   return (
     <div id="App">
       <Header />
@@ -17,7 +16,7 @@ function App() {
       <Person mydata={data} name="Bo" />
       <Person mydata={data} name="Ib" />
       <Person mydata={data} name="Ask" />
-      <Footer mydata={data} name="Ask" />
+      <Footer name="Ask" />
     </div>
     // <header>
     //   <h1>This is React</h1>
@@ -28,9 +27,7 @@ function Header() {
   return (
     <header>
       <h1>This is React</h1>
-      <section>
-        writen by <Person name="ju" />
-      </section>
+      <section />
     </header>
   );
 }
@@ -39,8 +36,16 @@ function Person(props) {
   return (
     <article>
       <h1>{props.name}</h1>
-      <p>ola</p>
+      <p>Im {props.mydata.age}</p>
+      <Skills skills={props.mydata.skills} />
     </article>
+  );
+}
+function Skills(props) {
+  return (
+    <ul>
+      <li>skills here</li>
+    </ul>
   );
 }
 //JSX = ex:"<App />" html elemts form react always capitalized
