@@ -27,3 +27,5 @@
 - map
 
 5. Spread operator
+
+6. import components
