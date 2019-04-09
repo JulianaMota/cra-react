@@ -24,14 +24,7 @@ function App() {
     }
   ];
   const friends = data.map(friend => {
-    return (
-      <Friends
-        name={friend.name}
-        email={friend.email}
-        hobbies={friend.hobbies}
-        pets={friend.pets}
-      />
-    );
+    return <Friends {...friend} />;
   });
   return (
     <div id="App">
@@ -47,6 +40,9 @@ function Friends(props) {
       <header>
         <h1>{props.name}</h1>
         <p>{props.email}</p>
+        <p>
+          {props.name} have {props.pets} pets.
+        </p>
       </header>
       <h2>Hobbies</h2>
       <ul>
