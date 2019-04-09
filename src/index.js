@@ -7,17 +7,20 @@ function App() {
     {
       name: "Ju",
       hobbies: ["drawing", "gaming", "anime"],
-      email: "ju@kea.dk"
+      email: "ju@kea.dk",
+      pets: 0
     },
     {
       name: "Pedro",
       hobbies: ["youtube", "gaming", "series"],
-      email: "pe@kea.dk"
+      email: "pe@kea.dk",
+      pets: 1
     },
     {
       name: "Laura",
       hobbies: ["series", "read", "gaming"],
-      email: "lau@kea.dk"
+      email: "lau@kea.dk",
+      pets: 2
     }
   ];
   const friends = data.map(friend => {
@@ -26,6 +29,7 @@ function App() {
         name={friend.name}
         email={friend.email}
         hobbies={friend.hobbies}
+        pets={friend.pets}
       />
     );
   });

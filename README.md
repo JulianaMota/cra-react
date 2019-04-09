@@ -25,3 +25,5 @@
 4. Rendering arrays
 
 - map
+
+5. Spread operator
