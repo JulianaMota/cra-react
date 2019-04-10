@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Friends(props) {
   return (
-    <article>
+    <article className="friend">
       <header>
         <h1>{props.name}</h1>
         <p>{props.email}</p>
