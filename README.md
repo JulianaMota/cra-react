@@ -29,3 +29,6 @@
 5. Spread operator
 
 6. import components
+
+- spliting up code
+
