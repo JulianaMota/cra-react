@@ -8,14 +8,15 @@ export default function App() {
       name: "Ju",
       hobbies: ["drawing", "gaming", "anime"],
       email: "ju@kea.dk",
-      pets: 0
+      pets: 0,
+      car: "mini"
     },
     {
       id: 2,
       name: "Pedro",
       hobbies: ["youtube", "gaming", "series"],
       email: "pe@kea.dk",
-      pets: 1
+      pets: 1,
     },
     {
       id: 3,
